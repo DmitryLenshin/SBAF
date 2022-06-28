@@ -1,0 +1,89 @@
+.hero {
+  height: 480px;
+  margin-top: 250px;
+  position: relative;
+  padding: 1rem;
+}
+
+.hero__title {
+  display: flex;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--text-title);
+  padding: 90px;
+}
+
+.hero_logo {
+  width: 75px;
+  height: 75x;
+  margin-right: 10px;
+}
+
+.calling-box {
+  margin: 20px 0;
+}
+
+.calling__deskr {
+  text-indent: 20px;
+  font-size: 21px;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  display: block;
+}
+
+.contact__list-item {
+  font-size: 17px;
+  color: red;
+  margin: 0 20px;
+}
+
+.information__text {
+  margin: 20px;
+  color: var(--text);
+}
+
+.information__btn {
+  padding: 8px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.information__btn::before {
+  content: "";
+  margin-right: 8px;
+  border: solid 3px var(--light-decor);
+}
+
+.info_deskr {
+  margin-left: 25px;
+}
+
+.alli-decor {
+  max-width: 75px;
+  max-height: 75px;
+}
+
+.info_list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__list-item {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  width: calc(33.3333333333% - 45px);
+  height: 150px;
+  box-shadow: 0.5px 0.5px 16px 2px var(--link);
+}
+
+.info__deskr {
+  text-align: center;
+}
