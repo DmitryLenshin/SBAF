@@ -27,6 +27,20 @@ html {
     max-width: 100%;
 }
 
+.main-faq {
+    margin: 0 auto;
+    width: 1180px;
+    padding: 0 20px;
+    max-width: 100%;
+}
+
+.main-pve {
+    margin: 0 auto;
+    width: 1180px;
+    padding: 0 20px;
+    max-width: 100%;
+}
+
 p {
     color: var(--text);
 }
@@ -394,14 +408,15 @@ textarea {
 
 :root {
     --text-title: rgb(48, 178, 230);
-    --black: #222222;
+    --black: #000000;
     --link: rgb(48, 178, 230);
     --link-decor: #ffffff;
-    --gray: #5D5D5D;
-    --light-decor: #F8F8F8;
+    --gray: #5d5d5d;
+    --light-decor: #f8f8f8;
     --backgorund: #202020;
-    --text: #D2D2D2;
+    --text: #d2d2d2;
     --text-link: rgb(33, 33, 33);
+    --horde-gold: #ffb23d;
 }
 
 header {
@@ -466,6 +481,7 @@ header {
 }
 
 .hero {
+    z-index: 100;
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -474,13 +490,13 @@ header {
     justify-content: center;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: 112px;
 }
 
 .hero_logo {
-    width: 50px;
-    height: 50px;
+    padding: 20px;
     background-image: url(https://images.evetech.net/corporations/98450785/logo);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -508,7 +524,11 @@ header {
     }
 
     30% {
-        letter-spacing: 12px;
+        letter-spacing: 8px;
+    }
+
+    85% {
+        margin-bottom: -30px;
     }
 }
 
@@ -518,14 +538,40 @@ header {
     }
 
     30% {
-        letter-spacing: 12px;
+        letter-spacing: 8px;
+    }
+
+    85% {
+        margin-bottom: -30px;
     }
 }
 
 @-webkit-keyframes subtext {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    85% {
+        color: transparent;
+    }
 }
 
 @keyframes subtext {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    85% {
+        color: transparent;
+    }
 }
 
 .calling-box {
@@ -543,12 +589,6 @@ details summary::-webkit-details-marker {
 
 summary {
     display: block;
-}
-
-.contact__list-item {
-    font-size: 17px;
-    color: red;
-    margin: 0 20px;
 }
 
 .information__text {
@@ -578,7 +618,18 @@ summary {
     max-height: 75px;
 }
 
-.info_list {
+.info__box {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.info__subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.info__list {
     -ms-flex-pack: center;
     justify-content: center;
     display: -ms-flexbox;
@@ -604,7 +655,126 @@ summary {
     text-align: center;
 }
 
+.faq {
+    background-color: var(--backgorund);
+    margin-top: 100px;
+}
+
+.faq__title {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 24px;
+    color: var(--text-title);
+}
+
+.faq__subtitle {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 16px;
+    color: var(--text-title);
+}
+
+.faq__deskr-box {
+    padding: 10px;
+    margin: 30px 0;
+    box-shadow: 0.1px 0.1px 4px 0.1px var(--text-title);
+}
+
+.faq__deskr-box p {
+    margin: 20px 15px;
+}
+
+.faq__horde-box {
+    padding: 10px;
+    margin: 30px 0;
+    box-shadow: 0.1px 0.1px 4px 0.1px var(--horde-gold);
+}
+
+.faq__horde-box p {
+    margin: 20px 15px;
+}
+
+.faq__link {
+    text-decoration: none;
+    color: var(--link);
+    border-bottom: 1px var(--horde-gold) solid;
+}
+
+.footer {
+    z-index: 100;
+    background-color: var(--black);
+    margin-top: 40px;
+}
+
+.footer__container {
+    width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact__box {
+    margin: 20px 0;
+}
+
+.contact__deskr {
+    font-size: 20px;
+    color: var(--text-title);
+    margin-bottom: 10px;
+}
+
+.contact__list-item {
+    display: block;
+    font-size: 17px;
+    color: var(--horde-gold);
+    margin: 0 20px;
+}
+
+.social_link-box {
+    margin: 20px 0;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.social_link-item {
+    font-size: 25px;
+    padding: 10px;
+    color: var(--horde-gold);
+    transition: 0.2s;
+}
+
+.social_link-item:hover {
+    -webkit-transform: scale(1.43);
+    transform: scale(1.43);
+}
+
+.ccp_link-box {
+    width: 1000px;
+    margin: 0 auto;
+    z-index: 100;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ccp-deskr {
+    margin: 10px;
+}
+
+.ccp_link {
+    color: red;
+    text-decoration: none;
+    padding: 4px;
+}
+
 .hero {
+    z-index: 100;
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -613,13 +783,13 @@ summary {
     justify-content: center;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: 112px;
 }
 
 .hero_logo {
-    width: 50px;
-    height: 50px;
+    padding: 20px;
     background-image: url(https://images.evetech.net/corporations/98450785/logo);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -647,11 +817,26 @@ summary {
     }
 
     30% {
-        letter-spacing: 12px;
+        letter-spacing: 8px;
+    }
+
+    85% {
+        margin-bottom: -30px;
     }
 }
 
 @keyframes subtext {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    85% {
+        color: transparent;
+    }
 }
 
 video {
@@ -681,4 +866,8 @@ video {
     color: white;
     position: relative;
     padding: 1rem;
+}
+
+body {
+    background-color: var(--backgorund);
 }

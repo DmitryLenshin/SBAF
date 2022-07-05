@@ -15,12 +15,6 @@ summary {
     display: block;
 }
 
-.contact__list-item {
-    font-size: 17px;
-    color: red;
-    margin: 0 20px;
-}
-
 .information__text {
     margin: 20px;
     color: var(--text);
@@ -48,7 +42,18 @@ summary {
     max-height: 75px;
 }
 
-.info_list {
+.info__box {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.info__subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.info__list {
     -ms-flex-pack: center;
     justify-content: center;
     display: -ms-flexbox;

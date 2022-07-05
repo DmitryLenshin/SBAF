@@ -1,0 +1,44 @@
+.faq {
+  background-color: var(--backgorund);
+  margin-top: 100px;
+}
+
+.faq__title {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 24px;
+  color: var(--text-title);
+}
+
+.faq__subtitle {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 16px;
+  color: var(--text-title);
+}
+
+.faq__deskr-box {
+  padding: 10px;
+  margin: 30px 0;
+  box-shadow: 0.1px 0.1px 4px 0.1px var(--text-title);
+}
+
+.faq__deskr-box p {
+  margin: 20px 15px;
+}
+
+.faq__horde-box {
+  padding: 10px;
+  margin: 30px 0;
+  box-shadow: 0.1px 0.1px 4px 0.1px var(--horde-gold);
+}
+
+.faq__horde-box p {
+  margin: 20px 15px;
+}
+
+.faq__link {
+  text-decoration: none;
+  color: var(--link);
+  border-bottom: 1px var(--horde-gold) solid;
+}

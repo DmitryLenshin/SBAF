@@ -1,0 +1,72 @@
+.footer {
+    z-index: 100;
+    background-color: var(--black);
+    margin-top: 40px;
+}
+
+.footer__container {
+    width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact__box {
+    margin: 20px 0;
+}
+
+.contact__deskr {
+    font-size: 20px;
+    color: var(--text-title);
+    margin-bottom: 10px;
+}
+
+.contact__list-item {
+    display: block;
+    font-size: 17px;
+    color: var(--horde-gold);
+    margin: 0 20px;
+}
+
+.social_link-box {
+    margin: 20px 0;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.social_link-item {
+    font-size: 25px;
+    padding: 10px;
+    color: var(--horde-gold);
+    transition: 0.2s;
+}
+
+.social_link-item:hover {
+    -webkit-transform: scale(1.43);
+    transform: scale(1.43);
+}
+
+.ccp_link-box {
+    width: 1000px;
+    margin: 0 auto;
+    z-index: 100;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ccp-deskr {
+    margin: 10px;
+}
+
+.ccp_link {
+    color: red;
+    text-decoration: none;
+    padding: 4px;
+}
