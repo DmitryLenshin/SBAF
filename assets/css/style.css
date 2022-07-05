@@ -10,7 +10,7 @@
 }
 
 html {
-    font-family: "Lato";
+    font-family: "Shentox", "Rogan", sans-serif;
 }
 
 .page {
@@ -22,9 +22,13 @@ html {
 
 .main {
     margin: 0 auto;
-    width: 1160px;
-    padding: 0 10px;
+    width: 1180px;
+    padding: 0 20px;
     max-width: 100%;
+}
+
+p {
+    color: var(--text);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -388,20 +392,47 @@ textarea {
     padding: 0.2em 0;
 }
 
+:root {
+    --text-title: rgb(48, 178, 230);
+    --black: #222222;
+    --link: rgb(48, 178, 230);
+    --link-decor: #ffffff;
+    --gray: #5D5D5D;
+    --light-decor: #F8F8F8;
+    --backgorund: #202020;
+    --text: #D2D2D2;
+    --text-link: rgb(33, 33, 33);
+}
+
+header {
+    -ms-flex-item-align: center;
+    align-self: center;
+    position: fixed;
+    width: 100vw;
+    background: rgba(48, 178, 230, 0.5);
+    z-index: 1000;
+}
+
 .header__box {
+    margin: 0 auto;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0 auto;
     width: 1160px;
-    padding: 0 10px;
     max-width: 100%;
+    padding: 0 10px;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+.sbaf-logo {
+    width: 50px;
+    height: 50px;
 }
 
 .header__link-logo {
     -ms-flex-align: center;
     align-items: center;
+    transition: 1s;
 }
 
 .header__nav-box {
@@ -411,27 +442,90 @@ textarea {
 }
 
 .header__link {
-    padding: 8px;
+    display: inline-block;
+    width: 77px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 8px 14px;
+    color: var(--text-link);
+    background-color: var(--link);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.header__link:hover {
+    box-shadow: 0.5px 0.5px 16px 2px var(--light-decor);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.header__link-logo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .hero {
-    height: 480px;
-    background: blueviolet;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 1rem;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.hero_logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://images.evetech.net/corporations/98450785/logo);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .hero__title {
-    display: -ms-flexbox;
-    display: flex;
     font-size: 36px;
     font-weight: 800;
-    color: gold;
-    padding: 90px;
+    color: var(--text-title);
+    -webkit-animation: text 3s 1;
+    animation: text 3s 1;
+    letter-spacing: 4px;
 }
 
-.hero__title::before {
-    content: "";
-    margin-right: 8px;
-    border: solid 5px gold;
+.hero__subtitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-title);
+    -webkit-animation: subtext 3s 1;
+    animation: subtext 3s 1;
+}
+
+@-webkit-keyframes text {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        letter-spacing: 12px;
+    }
+}
+
+@keyframes text {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        letter-spacing: 12px;
+    }
+}
+
+@-webkit-keyframes subtext {
+}
+
+@keyframes subtext {
 }
 
 .calling-box {
@@ -459,15 +553,132 @@ summary {
 
 .information__text {
     margin: 20px;
+    color: var(--text);
 }
 
 .information__btn {
     padding: 8px;
     cursor: pointer;
+    color: var(--text);
 }
 
 .information__btn::before {
     content: "";
     margin-right: 8px;
-    border: solid 3px gold;
+    border: solid 3px var(--light-decor);
+}
+
+.info_deskr {
+    margin-left: 25px;
+}
+
+.alli-decor {
+    float: left;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.info_list {
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.info__list-item {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: calc(33.3333333333% - 45px);
+    height: 150px;
+    box-shadow: 0.5px 0.5px 16px 2px var(--link);
+}
+
+.info__deskr {
+    text-align: center;
+}
+
+.hero {
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 1rem;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.hero_logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://images.evetech.net/corporations/98450785/logo);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero__title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-title);
+    -webkit-animation: text 3s 1;
+    animation: text 3s 1;
+    letter-spacing: 4px;
+}
+
+.hero__subtitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-title);
+    -webkit-animation: subtext 3s 1;
+    animation: subtext 3s 1;
+}
+
+@keyframes text {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        letter-spacing: 12px;
+    }
+}
+
+@keyframes subtext {
+}
+
+video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.viewport-header {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.66);
+    color: white;
+    position: relative;
+    padding: 1rem;
 }

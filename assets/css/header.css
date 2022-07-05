@@ -1,0 +1,60 @@
+header {
+    -ms-flex-item-align: center;
+    align-self: center;
+    position: fixed;
+    width: 100vw;
+    background: rgba(48, 178, 230, 0.5);
+    z-index: 1000;
+}
+
+.header__box {
+    margin: 0 auto;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 1160px;
+    max-width: 100%;
+    padding: 0 10px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.sbaf-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.header__link-logo {
+    -ms-flex-align: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.header__nav-box {
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header__link {
+    display: inline-block;
+    width: 77px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 8px 14px;
+    color: var(--text-link);
+    background-color: var(--link);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.header__link:hover {
+    box-shadow: 0.5px 0.5px 16px 2px var(--light-decor);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.header__link-logo:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}

@@ -1,0 +1,62 @@
+.hero {
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 1rem;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.hero_logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://images.evetech.net/corporations/98450785/logo);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero__title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-title);
+    -webkit-animation: text 3s 1;
+    animation: text 3s 1;
+    letter-spacing: 4px;
+}
+
+.hero__subtitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-title);
+    -webkit-animation: subtext 3s 1;
+    animation: subtext 3s 1;
+}
+
+@-webkit-keyframes text {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        letter-spacing: 12px;
+    }
+}
+
+@keyframes text {
+    0% {
+        color: transparent;
+    }
+
+    30% {
+        letter-spacing: 12px;
+    }
+}
+
+@-webkit-keyframes subtext {
+}
+
+@keyframes subtext {
+}
