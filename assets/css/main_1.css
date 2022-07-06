@@ -63,6 +63,7 @@ summary {
 }
 
 .info__list-item {
+    border-radius: 16px;
     display: -ms-flexbox;
     display: flex;
     margin: 20px;

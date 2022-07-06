@@ -10,6 +10,7 @@
 }
 
 .hero_logo {
+  margin-right: 15px;
   padding: 20px;
   background-image: url(https://images.evetech.net/corporations/98450785/logo);
   background-position: center;

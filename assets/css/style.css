@@ -408,6 +408,7 @@ textarea {
 
 :root {
     --text-title: rgb(48, 178, 230);
+    --text-subtitle: rgb(91, 76, 228);
     --black: #000000;
     --link: rgb(48, 178, 230);
     --link-decor: #ffffff;
@@ -639,6 +640,7 @@ summary {
 }
 
 .info__list-item {
+    border-radius: 16px;
     display: -ms-flexbox;
     display: flex;
     margin: 20px;
@@ -837,6 +839,20 @@ summary {
     85% {
         color: transparent;
     }
+}
+
+.pve__box {
+    margin-top: 100px;
+}
+
+.pve__box p {
+    margin: 10px;
+}
+
+.pve__subtitle {
+    margin-left: 30px;
+    color: var(--text-subtitle);
+    font-size: 20px;
 }
 
 video {

@@ -1,10 +1,12 @@
 .calling-box {
-  margin: 20px 0;
+  margin: 30px 0;
+  align-items: center;
 }
 
 .calling__deskr {
   text-indent: 20px;
   font-size: 21px;
+  margin-left: 20px;
 }
 
 details summary::-webkit-details-marker {
@@ -59,6 +61,7 @@ summary {
 }
 
 .info__list-item {
+  border-radius: 20px;
   display: flex;
   margin: 20px;
   align-items: center;
