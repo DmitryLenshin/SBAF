@@ -3,8 +3,9 @@ header {
     align-self: center;
     position: fixed;
     width: 100vw;
-    background: rgba(48, 178, 230, 0.5);
     z-index: 1000;
+    background-image: url(../images/fb-kosmos-i-nebo-123.jpg);
+    box-shadow: 1px 1px 10px 1px var(--text);
 }
 
 .header__box {
@@ -16,6 +17,10 @@ header {
     padding: 0 10px;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    background-image: url(../images/EVE_online_logo.svg.png);
+    background-position: center;
+    background-size: 10%;
+    background-repeat: no-repeat;
 }
 
 .sbaf-logo {

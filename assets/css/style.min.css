@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600&display=swap");
 .flex {
   display: flex;
 }
@@ -8,8 +9,12 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Shentox", "Rogan", sans-serif;
+body {
+  background-color: var(--backgorund);
+}
+
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .page {
@@ -481,6 +486,7 @@ header {
 }
 
 .hero__title {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 36px;
   font-weight: 800;
   color: var(--text-title);
@@ -489,6 +495,7 @@ header {
 }
 
 .hero__subtitle {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--text-title);
@@ -523,6 +530,7 @@ header {
 }
 
 .calling__deskr {
+  font-family: "Fira Sans Condensed", sans-serif;
   text-indent: 20px;
   font-size: 21px;
   margin-left: 20px;
@@ -568,6 +576,7 @@ summary {
 }
 
 .info__subtitle {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 24px;
   text-align: center;
   margin: 20px;
@@ -591,6 +600,7 @@ summary {
 }
 
 .info__deskr {
+  font-family: "Fira Sans Condensed", sans-serif;
   text-align: center;
 }
 
@@ -751,6 +761,7 @@ summary {
 }
 
 .hero__title {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 36px;
   font-weight: 800;
   color: var(--text-title);
@@ -759,6 +770,7 @@ summary {
 }
 
 .hero__subtitle {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--text-title);
@@ -826,8 +838,4 @@ video {
   padding: 1rem;
   border-radius: 25px;
   box-shadow: 0.5px 0.5px 16px 2px var(--gray);
-}
-
-body {
-  background-color: var(--backgorund);
 }

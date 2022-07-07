@@ -12,6 +12,7 @@
 }
 
 .hero_logo {
+    margin-right: 15px;
     padding: 20px;
     background-image: url(https://images.evetech.net/corporations/98450785/logo);
     background-position: center;
@@ -20,6 +21,7 @@
 }
 
 .hero__title {
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 36px;
     font-weight: 800;
     color: var(--text-title);
@@ -29,6 +31,7 @@
 }
 
 .hero__subtitle {
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: var(--text-title);

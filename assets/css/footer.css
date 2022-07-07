@@ -1,7 +1,13 @@
 .footer {
-    z-index: 100;
-    background-color: var(--black);
+    z-index: 10;
+    background: url(../images/evergreen-hero-v2.jpg);
+    background-position-y: 30%;
     margin-top: 40px;
+}
+
+.blur {
+    -webkit-backdrop-filter: brightness(40%);
+    backdrop-filter: brightness(40%);
 }
 
 .footer__container {
@@ -12,6 +18,10 @@
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+    background-image: url(../images/EVE_online_logo.svg.png);
+    background-position: center;
+    background-size: 20%;
+    background-repeat: no-repeat;
 }
 
 .contact__box {
@@ -24,10 +34,15 @@
     margin-bottom: 10px;
 }
 
+.contact__list {
+    margin-bottom: 16px;
+}
+
 .contact__list-item {
+    margin-bottom: 16px;
     display: block;
     font-size: 17px;
-    color: var(--horde-gold);
+    color: var(--text);
     margin: 0 20px;
 }
 
@@ -44,8 +59,19 @@
 .social_link-item {
     font-size: 25px;
     padding: 10px;
-    color: var(--horde-gold);
     transition: 0.2s;
+}
+
+.discrod {
+    color: var(--discord);
+}
+
+.mail {
+    color: var(--mail);
+}
+
+.zkb {
+    color: rgb(255, 0, 0);
 }
 
 .social_link-item:hover {

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600&display=swap");
+
 .flex {
     display: -ms-flexbox;
     display: flex;
@@ -9,8 +11,12 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: "Shentox", "Rogan", sans-serif;
+body {
+    background-color: var(--backgorund);
+}
+
+body {
+    font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .page {
@@ -418,6 +424,8 @@ textarea {
     --text: #d2d2d2;
     --text-link: rgb(33, 33, 33);
     --horde-gold: #ffb23d;
+    --discord: #5865f2;
+    --mail: #BB001B;
 }
 
 header {
@@ -425,8 +433,9 @@ header {
     align-self: center;
     position: fixed;
     width: 100vw;
-    background: rgba(48, 178, 230, 0.5);
     z-index: 1000;
+    background-image: url(../images/fb-kosmos-i-nebo-123.jpg);
+    box-shadow: 1px 1px 10px 1px var(--text);
 }
 
 .header__box {
@@ -438,6 +447,10 @@ header {
     padding: 0 10px;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    background-image: url(../images/EVE_online_logo.svg.png);
+    background-position: center;
+    background-size: 10%;
+    background-repeat: no-repeat;
 }
 
 .sbaf-logo {
@@ -495,6 +508,7 @@ header {
 }
 
 .hero_logo {
+    margin-right: 15px;
     padding: 20px;
     background-image: url(https://images.evetech.net/corporations/98450785/logo);
     background-position: center;
@@ -503,6 +517,7 @@ header {
 }
 
 .hero__title {
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 36px;
     font-weight: 800;
     color: var(--text-title);
@@ -512,6 +527,7 @@ header {
 }
 
 .hero__subtitle {
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: var(--text-title);
@@ -576,12 +592,15 @@ header {
 }
 
 .calling-box {
-    margin: 20px 0;
+    margin: 30px 0;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .calling__deskr {
     text-indent: 20px;
     font-size: 21px;
+    margin-left: 20px;
 }
 
 details summary::-webkit-details-marker {
@@ -640,7 +659,7 @@ summary {
 }
 
 .info__list-item {
-    border-radius: 16px;
+    border-radius: 20px;
     display: -ms-flexbox;
     display: flex;
     margin: 20px;
@@ -703,9 +722,15 @@ summary {
 }
 
 .footer {
-    z-index: 100;
-    background-color: var(--black);
+    z-index: 10;
+    background: url(../images/evergreen-hero-v2.jpg);
+    background-position-y: 30%;
     margin-top: 40px;
+}
+
+.blur {
+    -webkit-backdrop-filter: brightness(40%);
+    backdrop-filter: brightness(40%);
 }
 
 .footer__container {
@@ -716,6 +741,10 @@ summary {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+    background-image: url(../images/EVE_online_logo.svg.png);
+    background-position: center;
+    background-size: 20%;
+    background-repeat: no-repeat;
 }
 
 .contact__box {
@@ -728,10 +757,15 @@ summary {
     margin-bottom: 10px;
 }
 
+.contact__list {
+    margin-bottom: 16px;
+}
+
 .contact__list-item {
+    margin-bottom: 16px;
     display: block;
     font-size: 17px;
-    color: var(--horde-gold);
+    color: var(--text);
     margin: 0 20px;
 }
 
@@ -748,8 +782,19 @@ summary {
 .social_link-item {
     font-size: 25px;
     padding: 10px;
-    color: var(--horde-gold);
     transition: 0.2s;
+}
+
+.discrod {
+    color: var(--discord);
+}
+
+.mail {
+    color: var(--mail);
+}
+
+.zkb {
+    color: rgb(255, 0, 0);
 }
 
 .social_link-item:hover {
@@ -789,6 +834,7 @@ summary {
 }
 
 .hero_logo {
+    margin-right: 15px;
     padding: 20px;
     background-image: url(https://images.evetech.net/corporations/98450785/logo);
     background-position: center;
@@ -797,6 +843,7 @@ summary {
 }
 
 .hero__title {
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 36px;
     font-weight: 800;
     color: var(--text-title);
@@ -806,6 +853,7 @@ summary {
 }
 
 .hero__subtitle {
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: var(--text-title);
@@ -882,8 +930,6 @@ video {
     color: white;
     position: relative;
     padding: 1rem;
-}
-
-body {
-    background-color: var(--backgorund);
+    border-radius: 25px;
+    box-shadow: 0.5px 0.5px 16px 2px var(--gray);
 }

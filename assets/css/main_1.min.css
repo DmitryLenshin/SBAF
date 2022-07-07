@@ -4,6 +4,7 @@
 }
 
 .calling__deskr {
+  font-family: "Fira Sans Condensed", sans-serif;
   text-indent: 20px;
   font-size: 21px;
   margin-left: 20px;
@@ -49,6 +50,7 @@ summary {
 }
 
 .info__subtitle {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 24px;
   text-align: center;
   margin: 20px;
@@ -72,5 +74,6 @@ summary {
 }
 
 .info__deskr {
+  font-family: "Fira Sans Condensed", sans-serif;
   text-align: center;
 }
