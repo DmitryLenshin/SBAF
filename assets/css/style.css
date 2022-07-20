@@ -51,6 +51,11 @@ p {
     color: var(--text);
 }
 
+.video {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -598,6 +603,7 @@ header {
 }
 
 .calling__deskr {
+    font-family: "Fira Sans Condensed", sans-serif;
     text-indent: 20px;
     font-size: 21px;
     margin-left: 20px;
@@ -644,6 +650,7 @@ summary {
 }
 
 .info__subtitle {
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 24px;
     text-align: center;
     margin: 20px;
@@ -673,6 +680,7 @@ summary {
 }
 
 .info__deskr {
+    font-family: "Fira Sans Condensed", sans-serif;
     text-align: center;
 }
 
