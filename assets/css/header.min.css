@@ -33,11 +33,12 @@ header {
 .header__nav-box {
   align-items: center;
   padding: 15px 0;
+  flex-wrap: nowrap;
 }
 
 .header__link {
   display: inline-block;
-  width: 77px;
+  min-width: 77px;
   text-align: center;
   text-decoration: none;
   margin-left: 16px;

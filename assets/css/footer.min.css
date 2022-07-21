@@ -26,6 +26,7 @@
 }
 
 .contact__deskr {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 20px;
   color: var(--text-title);
   margin-bottom: 10px;
@@ -36,6 +37,7 @@
 }
 
 .contact__list-item {
+  font-family: "Fira Sans Condensed", sans-serif;
   margin-bottom: 16px;
   display: block;
   font-size: 17px;

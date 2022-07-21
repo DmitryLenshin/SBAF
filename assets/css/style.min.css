@@ -445,11 +445,12 @@ header {
 .header__nav-box {
   align-items: center;
   padding: 15px 0;
+  flex-wrap: nowrap;
 }
 
 .header__link {
   display: inline-block;
-  width: 77px;
+  min-width: 77px;
   text-align: center;
   text-decoration: none;
   margin-left: 16px;
@@ -681,6 +682,7 @@ summary {
 }
 
 .contact__deskr {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 20px;
   color: var(--text-title);
   margin-bottom: 10px;
@@ -691,6 +693,7 @@ summary {
 }
 
 .contact__list-item {
+  font-family: "Fira Sans Condensed", sans-serif;
   margin-bottom: 16px;
   display: block;
   font-size: 17px;
