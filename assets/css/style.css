@@ -472,11 +472,13 @@ header {
     -ms-flex-align: center;
     align-items: center;
     padding: 15px 0;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
 .header__link {
     display: inline-block;
-    width: 77px;
+    min-width: 77px;
     text-align: center;
     text-decoration: none;
     margin-left: 16px;

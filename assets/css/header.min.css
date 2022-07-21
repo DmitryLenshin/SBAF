@@ -7,6 +7,10 @@ header {
   box-shadow: 1px 1px 10px 1px var(--text);
 }
 
+.img__eve {
+  width: 120px;
+}
+
 .header__box {
   margin: 0 auto;
   align-items: center;
@@ -14,10 +18,6 @@ header {
   max-width: 100%;
   padding: 0 10px;
   justify-content: space-between;
-  background-image: url(../images/EVE_online_logo.svg.png);
-  background-position: center;
-  background-size: 10%;
-  background-repeat: no-repeat;
 }
 
 .sbaf-logo {
